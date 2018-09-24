@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.DanhGia.DanhGiaActivity">
+    
+    <TextView
+        android:padding="10dp"
+        android:text="Nhận xét về sản phẩm này"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:scaleY=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:scaleX=".5"
+        android:id="@+id/rbDanhGia"
+        android:numStars="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:padding="10dp"
+        android:id="@+id/input_edTieuDeDG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="Tiêu đề đánh giá"
+            android:maxLines="1"
+            android:inputType="text"
+            android:maxLength="50"
+            android:id="@+id/edTieuDe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:padding="10dp"
+        android:id="@+id/input_edNoiDungDG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="Nội dung đánh giá"
+            android:scrollbars="vertical"
+            android:maxLines="5"
+            android:id="@+id/edNoiDung"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:background="@color/colorOrange"
+        android:textColor="@color/colorWhite"
+        android:text="Đồng Ý"
+        android:id="@+id/btnDongYDG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

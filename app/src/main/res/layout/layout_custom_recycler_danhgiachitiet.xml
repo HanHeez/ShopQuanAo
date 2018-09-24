@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/colorDarkGrey"
+        android:id="@+id/txtTieuDeDG"
+        android:text="Tiêu đề"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RatingBar
+        android:id="@+id/rbDG"
+        android:theme="@style/DoiMauRatingBar"
+        style="?android:ratingBarStyleSmall"
+        android:numStars="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtDuocDGBoi"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:text="Được đăng bởi"
+        android:textColor="@color/colorDarkGrey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/colorDark"
+        android:text="Nội dung"
+        android:id="@+id/txtNoiDungDG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

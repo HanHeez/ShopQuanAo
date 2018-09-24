@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#f1aa90</color>
+    <color name="colorAccent">#f1aa90</color>
+    <color name="bgToolbar" >#ffffff</color>
+    <color name="colorWhite" >#ffffff</color>
+    <color name="bgMain" >#fae4e4</color>
+    <color name="colorOrange" >#f2794c</color>
+    <color name="colorBorderSearch" >#f22929</color>
+    <color name="colorGrey">#bababa</color>
+    <color name="colorWhiteGrey">#ededed</color>
+    <color name="colorDarkGrey">#5e5e5e</color>
+    <color name="colorTransparent">#FF000000</color>
+    <color name="transparentBlack">#B2000000</color>
+    <color name="colorRed">#F00</color>
+    <color name="colorDark">#000</color>
+    <color name="colorBlue">#3d70f1</color>
+    <color name="colorBlueCyan">#29c0c2</color>
+    <color name="colorFacebook">#4a6ea9</color>
+    <color name="colorGoogle">#da4835</color>
+    <color name="colorGreen">#38f734</color>
+    <color name="colorSliderInActive">#a3a3a3</color>
+    <color name="colorSliderActive">#161616</color>
+
+</resources>

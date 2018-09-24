@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ShopQuanAo</string>
+    <string name="trangchu">Trang chủ</string>
+    <string name="hangmoi">New</string>
+    <string name="sanpham">Sản phẩm</string>
+    <string name="thongbao">Thông báo</string>
+    <string name="taikhoan">Tài khoản</string>
+    <string name="red">red</string>
+    <string name="blue">blue</string>
+    <string name="green">green</string>
+    <string name="quaramark">Quara Mark</string>
+    <string name="khuyenmai">Khuyến mãi</string>
+    <string name="sieure">Siêu rẻ</string>
+    <string name="magiamgia">Mã giảm giá</string>
+    <string name="danhmuc">Danh mục</string>
+    <string name="timkiemphobien">Tìm kiếm phổ biế́n</string>
+    <string name="xemthem">Xem thêm</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="facebook_app_id">189717198323575</string>
+    <string name="fb_login_protocol_scheme">fb189717198323575</string>
+    <string name="google_client">802180849554-6qnvvoe5nvum72abm9be063m9ccks2qr.apps.googleusercontent.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

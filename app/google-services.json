@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "149921812061",
+    "firebase_url": "https://ungdungshopquanao.firebaseio.com",
+    "project_id": "ungdungshopquanao",
+    "storage_bucket": "ungdungshopquanao.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149921812061:android:6334a2ed17fe64c6",
+        "android_client_info": {
+          "package_name": "com.gtv.hanhee.shopquanao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149921812061-lgsgpr7bmnrkggbl7jh5vrju94lnlhmv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gtv.hanhee.shopquanao",
+            "certificate_hash": "5f53137fd204bb75229b7cb04596e2d98527dc62"
+          }
+        },
+        {
+          "client_id": "149921812061-pkktvc3tda1728ndlvgs8m0l6c7p27n1.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "149921812061-pkktvc3tda1728ndlvgs8m0l6c7p27n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmA6QfxJwZZut4BHWqeIMy7yY_WgqsQxU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149921812061-pkktvc3tda1728ndlvgs8m0l6c7p27n1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

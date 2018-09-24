@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemTrangchu"
+        android:icon="@drawable/baseline_home_black_24dp"
+        app:showAsAction="always"
+        android:title="@string/trangchu"/>
+
+    <item
+        android:id="@+id/itemDanhmuc"
+        android:icon="@drawable/icon_clothes"
+        app:showAsAction="always"
+        android:title="@string/sanpham"/>
+    <item
+        android:id="@+id/itemHangmoi"
+        android:icon="@drawable/icon_new_product"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/itemThongbao"
+        android:icon="@drawable/baseline_notification_important_black_24dp"
+        app:showAsAction="always"
+
+        android:title="@string/thongbao"/>
+    <item
+        android:id="@+id/itemTaikhoan"
+        android:icon="@drawable/baseline_account_circle_black_24dp"
+        app:showAsAction="always"
+
+        android:title="@string/taikhoan"/>
+
+</menu>

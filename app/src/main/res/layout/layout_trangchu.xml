@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgMain"
+    android:orientation="vertical"
+    tools:context=".View.TrangChu.TrangChuActivity">
+
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bnve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        app:itemIconTint="@drawable/change_background_viewpager"
+        app:itemTextColor="@drawable/change_background_viewpager"
+        app:menu="@menu/menu_navigation" />
+
+    <com.gtv.hanhee.shopquanao._CustomView.NonSwipeableViewPager
+        android:layout_alignParentTop="true"
+        android:id="@+id/viewPagerTrangchu"
+        android:layout_above="@+id/bnve"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.gtv.hanhee.shopquanao._CustomView.NonSwipeableViewPager>
+
+
+</RelativeLayout>

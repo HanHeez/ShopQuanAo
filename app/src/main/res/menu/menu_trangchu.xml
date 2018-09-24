@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/itemSearch"
+        android:icon="@drawable/search_icon_50px"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/itemCart"
+        android:icon="@drawable/icon_cart"
+        app:showAsAction="ifRoom"
+        app:actionLayout="@layout/custom_giohang"
+        android:title="" />
+
+    <item
+        android:id="@+id/itemComment"
+        android:icon="@drawable/icon_comment"
+        app:showAsAction="ifRoom"
+        android:title="" />
+
+</menu>
