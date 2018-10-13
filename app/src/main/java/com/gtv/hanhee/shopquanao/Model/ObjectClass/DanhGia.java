@@ -22,7 +22,7 @@ public class DanhGia {
     @SerializedName("SOSAO")
     @Expose
     private int sosao;
-    @SerializedName("NGAYDANG")
+    @SerializedName("NGAYDANHGIA")
     @Expose
     private String ngaydang;
 

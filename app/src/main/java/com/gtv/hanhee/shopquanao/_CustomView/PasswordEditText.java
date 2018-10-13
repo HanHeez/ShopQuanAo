@@ -6,7 +6,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.v4.content.ContextCompat;
+import android.support.v4.content.res.ResourcesCompat;
 import android.text.InputType;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -52,8 +52,9 @@ public class PasswordEditText extends EditText {
             this.useStrike = array.getBoolean(R.styleable.PasswordEditText_useStrike,false);
             this.useValidate = array.getBoolean(R.styleable.PasswordEditText_useValidate,false);
         }
-        eye = ContextCompat.getDrawable(getContext(), R.drawable.ic_visibility_black_24dp).mutate();
-        eyeStrike = ContextCompat.getDrawable(getContext(), R.drawable.ic_visibility_off_black_24dp).mutate();
+        eye = ResourcesCompat.getDrawable(getContext().getResources(), R.drawable.ic_visibility_black_24dp, null);
+        eyeStrike = ResourcesCompat.getDrawable(getContext().getResources(), R.drawable.ic_visibility_off_black_24dp, null);
+//        eyeStrike = ContextCompat.getDrawable(getContext(), R.drawable.ic_visibility_off_black_24dp).mutate();
         CaiDat();
     }
 

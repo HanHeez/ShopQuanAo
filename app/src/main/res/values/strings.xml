@@ -17,6 +17,7 @@
     <string name="xemthem">Xem thêm</string>
     <string name="open">Mở</string>
     <string name="close">Đóng</string>
+    <string name="chuanhapemail">Bạn chưa nhập mục này</string>
     <string name="facebook_app_id">189717198323575</string>
     <string name="fb_login_protocol_scheme">fb189717198323575</string>
     <string name="google_client">802180849554-6qnvvoe5nvum72abm9be063m9ccks2qr.apps.googleusercontent.com</string>

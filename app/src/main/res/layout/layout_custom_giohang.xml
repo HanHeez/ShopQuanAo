@@ -13,7 +13,8 @@
 
         <ImageView
             android:id="@+id/imgHinhGioHang"
-            android:layout_width="100dp"
+            android:layout_margin="10dp"
+            android:layout_width="80dp"
             android:layout_height="140dp"
             android:scaleType="centerCrop"
             android:src="@drawable/shop4" />

@@ -1,27 +1,20 @@
 package com.gtv.hanhee.shopquanao.View.HienThiSanPhamTheoDanhMuc;
 
-import android.app.Fragment;
 import android.content.Intent;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-
 import com.gtv.hanhee.shopquanao.Adapter.AdapterDienTuTopDienThoai;
-
 import com.gtv.hanhee.shopquanao.Model.ObjectClass.ILoadMore;
 import com.gtv.hanhee.shopquanao.Model.ObjectClass.LoadMoreScroll;
 import com.gtv.hanhee.shopquanao.Model.ObjectClass.SanPham;
@@ -32,7 +25,6 @@ import com.gtv.hanhee.shopquanao.View.GioHang.GioHangActivity;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.zip.Inflater;
 
 public class HienThiSanPhamTheoDanhMucActivity extends AppCompatActivity implements ViewHienThiSPTheoDanhMuc,View.OnClickListener,ILoadMore {
     PresenterHienThiSanPhamTheoDanhMuc presenterHienThiSanPhamTheoDanhMuc;
@@ -123,7 +115,6 @@ public class HienThiSanPhamTheoDanhMucActivity extends AppCompatActivity impleme
     public void HienThiSPTheoMaLoai(List<SanPham> sanPhams) {
         sanPhamList.addAll(sanPhams);
         progressBar.setVisibility(View.GONE);
-        Log.d("kiemtra", String.valueOf(sanPhamList.size()));
         loadMoreScroll.setLoaded();
         adapterDienTuTopDienThoai.notifyDataSetChanged();
     }

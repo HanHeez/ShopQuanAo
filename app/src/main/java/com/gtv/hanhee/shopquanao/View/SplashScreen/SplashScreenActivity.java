@@ -5,10 +5,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.gtv.hanhee.shopquanao.Model.XuLyMenu.LoaiSanPham;
 import com.gtv.hanhee.shopquanao.R;
 import com.gtv.hanhee.shopquanao.View.TrangChu.TrangChuActivity;
+import com.gtv.hanhee.shopquanao.View.TrangChu.ViewXuLyMenu;
 
-public class SplashScreenActivity extends AppCompatActivity {
+import java.util.List;
+
+public class SplashScreenActivity extends AppCompatActivity implements ViewXuLyMenu {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 } finally {
                     Intent iTrangChu = new Intent(SplashScreenActivity.this, TrangChuActivity.class);
                     startActivity(iTrangChu);
+                    finish();
                 }
             }
         });
@@ -37,10 +42,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+
                         // Set the content to appear under the system bars so that the
                         // content doesn't resize when the system bars hide and show.
-                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                         | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                         // Hide the nav bar and status bar
@@ -48,11 +53,8 @@ public class SplashScreenActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
 
-    private void showSystemUI() {
-        View decorView = getWindow().getDecorView();
-        decorView.setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+    @Override
+    public void HienThiDanhSachMenu(List<LoaiSanPham> loaiSanPhamList) {
+
     }
 }

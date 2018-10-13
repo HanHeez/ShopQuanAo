@@ -15,7 +15,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,7 +27,6 @@ import android.widget.Toast;
 
 import com.gtv.hanhee.shopquanao.Adapter.AdapterRecycleDanhGia;
 import com.gtv.hanhee.shopquanao.Adapter.AdapterViewPagerSlider;
-
 import com.gtv.hanhee.shopquanao.Model.GioHang.GioHangApp;
 import com.gtv.hanhee.shopquanao.Model.ObjectClass.ChiTietSanPham;
 import com.gtv.hanhee.shopquanao.Model.ObjectClass.DanhGia;
@@ -39,7 +37,6 @@ import com.gtv.hanhee.shopquanao.Model.ObjectClass.SanPham;
 import com.gtv.hanhee.shopquanao.Presenter.ChiTietSanPham.PresenterChiTietSanPham;
 import com.gtv.hanhee.shopquanao.Presenter.GioHang.PresenterGioHang;
 import com.gtv.hanhee.shopquanao.R;
-import com.gtv.hanhee.shopquanao._Retrofit.APIUtils;
 import com.gtv.hanhee.shopquanao.View.DanhGia.DanhGiaActivity;
 import com.gtv.hanhee.shopquanao.View.DanhGia.DanhSachDanhGiaActivity;
 import com.gtv.hanhee.shopquanao.View.GioHang.GioHangActivity;
@@ -344,11 +341,9 @@ public class ChiTietSanPhamActivity extends AppCompatActivity implements ViewChi
                 gioHangList = new ArrayList<>();
                 gioHangList = presenterGioHang.LaySPTheoMaspGioHang(sanphamdangxem.getMasp());
                 if (gioHangList.size() > 0) {
-                    Log.d("kiemtra", String.valueOf(presenterGioHang.soLuongSanPhamTrongGioHang()));
                     Toast.makeText(this, "Sản phẩm đã có trong giỏ hàng và bắt đầu thanh toán", Toast.LENGTH_SHORT).show();
                 } else {
                     presenterGioHang.ThemGioHangVaoDatabase(sanphamdangxem);
-                    Log.d("kiemtra", String.valueOf(presenterGioHang.soLuongSanPhamTrongGioHang()));
                     Toast.makeText(this, "Thêm sản phẩm vào giỏ hàng và bắt đầu thanh toán", Toast.LENGTH_SHORT).show();
 
                 }

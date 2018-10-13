@@ -9,13 +9,13 @@ import java.util.List;
 public class SanPham implements Serializable {
     @SerializedName("MASP")
     @Expose
-    private int masp;
+    private Integer masp;
     @SerializedName("TENSP")
     @Expose
     private String tensp;
     @SerializedName("GIA")
     @Expose
-    private int gia;
+    private Integer gia;
     @SerializedName("ANHLON")
     @Expose
     private String anhlon;
@@ -27,50 +27,34 @@ public class SanPham implements Serializable {
     private String thongtin;
     @SerializedName("SOLUONG")
     @Expose
-    private int soluong;
+    private Integer soluong;
     @SerializedName("MALOAISP")
     @Expose
-    private int maloaisp;
+    private Integer maloaisp;
     @SerializedName("MATHUONGHIEU")
     @Expose
-    private int mathuonghieu;
+    private Integer mathuonghieu;
     @SerializedName("LUOTMUA")
     @Expose
-    private int luotmua;
+    private Integer luotmua;
     @SerializedName("MANV")
     @Expose
-    private int manv;
+    private Integer manv;
     @SerializedName("TENNV")
     @Expose
     private String tennv;
     @SerializedName("PHANTRAMKM")
     @Expose
-    private int phantramkm;
+    private Integer phantramkm;
     @SerializedName("THONGSOKYTHUAT")
     @Expose
     private List<ChiTietSanPham> chiTietSanPhamList;
 
-    public int getPhantramkm() {
-        return phantramkm;
-    }
-
-    public void setPhantramkm(int phantramkm) {
-        this.phantramkm = phantramkm;
-    }
-
-    public String getTennv() {
-        return tennv;
-    }
-
-    public void setTennv(String tennv) {
-        this.tennv = tennv;
-    }
-
-    public int getMasp() {
+    public Integer getMasp() {
         return masp;
     }
 
-    public void setMasp(int masp) {
+    public void setMasp(Integer masp) {
         this.masp = masp;
     }
 
@@ -82,11 +66,11 @@ public class SanPham implements Serializable {
         this.tensp = tensp;
     }
 
-    public int getGia() {
+    public Integer getGia() {
         return gia;
     }
 
-    public void setGia(int gia) {
+    public void setGia(Integer gia) {
         this.gia = gia;
     }
 
@@ -114,44 +98,60 @@ public class SanPham implements Serializable {
         this.thongtin = thongtin;
     }
 
-    public int getSoluong() {
+    public Integer getSoluong() {
         return soluong;
     }
 
-    public void setSoluong(int soluong) {
+    public void setSoluong(Integer soluong) {
         this.soluong = soluong;
     }
 
-    public int getMaloaisp() {
+    public Integer getMaloaisp() {
         return maloaisp;
     }
 
-    public void setMaloaisp(int maloaisp) {
+    public void setMaloaisp(Integer maloaisp) {
         this.maloaisp = maloaisp;
     }
 
-    public int getMathuonghieu() {
+    public Integer getMathuonghieu() {
         return mathuonghieu;
     }
 
-    public void setMathuonghieu(int mathuonghieu) {
+    public void setMathuonghieu(Integer mathuonghieu) {
         this.mathuonghieu = mathuonghieu;
     }
 
-    public int getLuotmua() {
+    public Integer getLuotmua() {
         return luotmua;
     }
 
-    public void setLuotmua(int luotmua) {
+    public void setLuotmua(Integer luotmua) {
         this.luotmua = luotmua;
     }
 
-    public int getManv() {
+    public Integer getManv() {
         return manv;
     }
 
-    public void setManv(int manv) {
+    public void setManv(Integer manv) {
         this.manv = manv;
+    }
+
+    public String getTennv() {
+        return tennv;
+    }
+
+    public void setTennv(String tennv) {
+        this.tennv = tennv;
+    }
+
+    public Integer getPhantramkm() {
+        return phantramkm;
+    }
+
+    public void setPhantramkm(Integer phantramkm) {
+        this.phantramkm = phantramkm;
     }
 
     public List<ChiTietSanPham> getChiTietSanPhamList() {

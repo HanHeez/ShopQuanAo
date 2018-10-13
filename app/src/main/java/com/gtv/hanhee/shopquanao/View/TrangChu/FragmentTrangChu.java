@@ -57,11 +57,12 @@ public class FragmentTrangChu extends Fragment implements ViewXuLyMenu,View.OnCl
         view = inflater.inflate(R.layout.layout_fragment_trangchu,container,false);
         presenterLogicXuLyMenu = new PresenterLogicXuLyMenu(this);
         presenterGioHang = new PresenterGioHang(getContext());
-        presenterGioHang.XoaDatabase();
+//        presenterGioHang.XoaDatabase();
         AddControls();
         AddEvents();
         return view;
     }
+
 
     @Override
     public void HienThiDanhSachMenu(List<LoaiSanPham> loaiSanPhamList) {
@@ -84,13 +85,14 @@ public class FragmentTrangChu extends Fragment implements ViewXuLyMenu,View.OnCl
         setHasOptionsMenu(true);
         final AppCompatActivity activity = (AppCompatActivity) getActivity();
         activity.setSupportActionBar(mainToolbar);
-        activity.getSupportActionBar().setHomeButtonEnabled(true);
-        activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         drawerLayout = view.findViewById(R.id.drawerLayout);
         drawerToggle = new ActionBarDrawerToggle(getActivity(), drawerLayout, R.string.open, R.string.close);
 //        drawerToggle.setDrawerIndicatorEnabled(false);
 //        drawerToggle.setHomeAsUpIndicator(R.drawable.icon_new);
+
+        //enable icon drawerToggle
         activity.getSupportActionBar().setHomeButtonEnabled(true);
         activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         drawerLayout.addDrawerListener(drawerToggle);

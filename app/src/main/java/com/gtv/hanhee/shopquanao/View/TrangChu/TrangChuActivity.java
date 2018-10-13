@@ -6,15 +6,15 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.facebook.appevents.AppEventsLogger;
 import com.gtv.hanhee.shopquanao.Adapter.AdapterViewPagerTrangchu;
-import com.gtv.hanhee.shopquanao._CustomView.NonSwipeableViewPager;
 import com.gtv.hanhee.shopquanao.Presenter.TrangChu.PresenterLogicXuLyMenu;
 import com.gtv.hanhee.shopquanao.R;
+import com.gtv.hanhee.shopquanao._CustomView.NonSwipeableViewPager;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import q.rorbin.badgeview.Badge;
@@ -29,6 +29,7 @@ public class TrangChuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        showSystemUI();
         AppEventsLogger.activateApp(getApplication());
         logicXuLyMenu = new PresenterLogicXuLyMenu();
         logicXuLyMenu.LayTenNguoiDungFacebook(this);
@@ -57,16 +58,24 @@ public class TrangChuActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.itemCart:
                         viewPagerTrangchu.setCurrentItem(0);
-                        Log.d("kiemtra", "click cart");
+                        //click Cart
                         break;
                     case R.id.itemComment:
                         viewPagerTrangchu.setCurrentItem(1);
-                        Log.d("kiemtra", "click commment");
+                        //click Comment
                         break;
                 }
                 return true;
             }
         });
+    }
+
+    private void showSystemUI() {
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
     }
 
     private Badge addBadgeAt(int position, int number) {

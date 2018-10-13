@@ -1,7 +1,6 @@
 package com.gtv.hanhee.shopquanao._Retrofit;
 
 import com.gtv.hanhee.shopquanao.Model.DangNhap.ModelDangNhap;
-
 import com.gtv.hanhee.shopquanao.Model.ObjectClass.DanhGia;
 import com.gtv.hanhee.shopquanao.Model.ObjectClass.KhuyenMai;
 import com.gtv.hanhee.shopquanao.Model.ObjectClass.SanPham;
@@ -20,7 +19,7 @@ public interface LayDuLieuTuUrl {
     @GET("laydanhsachkhuyenmai.php")
     Observable<List<KhuyenMai>> LayDanhSachKhuyenMai();
 
-    @GET("laydanhsach_cac_thuonghieulon.php")
+    @GET("Quara/thuonghieulon")
     Observable<List<ThuongHieu>> LayDanhSachCAcThuongHieuLon();
     @GET("laylogothuonghieulon.php")
     Observable<List<ThuongHieu>> LayLogoThuongHieuLon();
@@ -36,7 +35,7 @@ public interface LayDuLieuTuUrl {
     Observable<List<SanPham>> LayDSTopTienIch();
 
 
-    @GET("laysanphammoive.php")
+    @GET("Quara/sanpham/moive")
     Observable<List<SanPham>> LaySanPhamMoiVe();
 
     @GET("laydanhsachtop_dienthoai_va_maytinhbang.php")
@@ -50,15 +49,16 @@ public interface LayDuLieuTuUrl {
     Observable<List<DanhGia>> LayDSDanhGiaTheoMa(@Field("masp") int masp, @Field("limit") int limit, @Field("gioihanload") int gioihanload);
 
     @FormUrlEncoded
-    @POST("timkiemsptheotensp.php")
+    @POST("Quara/sanpham/searchtensp")
     Observable<List<SanPham>> LayDSSPTheoTenSP(@Field("tensp") String tensp,@Field("limit") int limit);
 
     @FormUrlEncoded
-    @POST("laydanhsachsanphamtheomaloai.php")
+    @POST("Quara/sanpham/maloai")
     Observable<List<SanPham>> LayDSSPTheoMaLoai(@Field("maloaisp") int maloaisp,@Field("limit") int limit);
+
     @FormUrlEncoded
-    @POST("laydanhsachsanphamtheomathuonghieu.php")
-    Observable<List<SanPham>> LayDSSPTheoMaTH(@Field("maloaith") int maloaisp,@Field("limit") int limit);
+    @POST("Quara/sanpham/math")
+    Observable<List<SanPham>> LayDSSPTheoMaTH(@Field("maloaith") int maloaisp, @Field("start") int limit);
 
 
     @FormUrlEncoded

@@ -46,8 +46,7 @@ public class AdapterGioHang extends RecyclerView.Adapter<AdapterGioHang.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         GioHang gioHang = gioHangList.get(position);
         presenterGioHang = new PresenterGioHang(context);
-
-        GlideApp.with(context).load(APIUtils.Base_url+gioHang.getAnhlon())
+        GlideApp.with(context).load(gioHang.getAnhlon())
                 .apply(new RequestOptions().override(90, 90))
                 .transition(new DrawableTransitionOptions().crossFade(500)).into(holder.imgHinhGioHang);
         holder.txtTenGioHang.setText(gioHang.getTensp());
@@ -76,7 +75,6 @@ public class AdapterGioHang extends RecyclerView.Adapter<AdapterGioHang.ViewHold
                     presenterGioHang.CapNhatSLDangDatMuaGioHang(itemgiohanghientai, soluongdat);
                 }
                 holder.txtSLSP.setText(soluongdat + "");
-                Log.d("kiemtra", (int) gioHang.getMasp() + " " + itemgiohanghientai.getSoluongdangdat() + "");
             }
         });
 
@@ -93,7 +91,6 @@ public class AdapterGioHang extends RecyclerView.Adapter<AdapterGioHang.ViewHold
                     Toast.makeText(context, "Số lượng sản phẩm bạn mua quá số lượng trong kho cửa hàng", Toast.LENGTH_SHORT).show();
                 }
                 holder.txtSLSP.setText(soluongdat + "");
-                Log.d("kiemtra", gioHang.getMasp() + " " + itemgiohanghientai.getSoluongdangdat() + "");
 
             }
         });

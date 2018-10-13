@@ -105,6 +105,7 @@ public class FragmentDangKy extends Fragment implements ViewDangKy,View.OnClickL
                     String chuoi = ((EditText) v).getText().toString();
                     if (chuoi.trim().equals("") || chuoi.equals(null)) {
                         input_edHoTen.setErrorEnabled(true);
+                        edHoTen.setError("Bạn chưa nhập mục này");
                         input_edHoTen.setError("Bạn chưa nhập mục này");
                         kiemtrathongtin = false;
                     } else {
@@ -158,6 +159,7 @@ public class FragmentDangKy extends Fragment implements ViewDangKy,View.OnClickL
                 if (!hasFocus) {
                     String chuoi = ((EditText) v).getText().toString();
                     String matkhau = edMatKhau.getText().toString();
+
                     if (!chuoi.equals(matkhau)) {
                         input_edNhapLaiMatKhau.setErrorEnabled(true);
                         input_edNhapLaiMatKhau.setError("Mật khẩu không trùng khớp");
